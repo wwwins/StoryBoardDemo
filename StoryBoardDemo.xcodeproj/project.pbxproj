@@ -21,6 +21,7 @@
 		7C33B3B3181E5690002AB1CF /* SBDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C33B3B2181E5690002AB1CF /* SBDViewController.m */; };
 		7C33B3B6181E5A3E002AB1CF /* SBDTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C33B3B5181E5A3E002AB1CF /* SBDTabViewController.m */; };
 		7C978089188522E20086700E /* SBDLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C978088188522E20086700E /* SBDLoginController.m */; };
+		7CEB39D1188D1D5700CDA87D /* SBDCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEB39D0188D1D5700CDA87D /* SBDCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		7C33B3B5181E5A3E002AB1CF /* SBDTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDTabViewController.m; sourceTree = "<group>"; };
 		7C978087188522E20086700E /* SBDLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDLoginController.h; sourceTree = "<group>"; };
 		7C978088188522E20086700E /* SBDLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDLoginController.m; sourceTree = "<group>"; };
+		7CEB39CF188D1D5700CDA87D /* SBDCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDCollectionViewController.h; sourceTree = "<group>"; };
+		7CEB39D0188D1D5700CDA87D /* SBDCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 				7C33B3B5181E5A3E002AB1CF /* SBDTabViewController.m */,
 				7C978087188522E20086700E /* SBDLoginController.h */,
 				7C978088188522E20086700E /* SBDLoginController.m */,
+				7CEB39CF188D1D5700CDA87D /* SBDCollectionViewController.h */,
+				7CEB39D0188D1D5700CDA87D /* SBDCollectionViewController.m */,
 			);
 			path = StoryBoardDemo;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CEB39D1188D1D5700CDA87D /* SBDCollectionViewController.m in Sources */,
 				7C31DF98181E3ED300A5CEBC /* main.m in Sources */,
 				7C978089188522E20086700E /* SBDLoginController.m in Sources */,
 				7C31DF9C181E3ED300A5CEBC /* SBDAppDelegate.m in Sources */,
@@ -272,6 +278,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StoryBoardDemo/StoryBoardDemo-Prefix.pch";
 				INFOPLIST_FILE = "StoryBoardDemo/StoryBoardDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -283,6 +290,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StoryBoardDemo/StoryBoardDemo-Prefix.pch";
 				INFOPLIST_FILE = "StoryBoardDemo/StoryBoardDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
