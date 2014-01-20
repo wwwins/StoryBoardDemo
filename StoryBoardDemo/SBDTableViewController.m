@@ -1,18 +1,23 @@
 //
-//  SBDTabViewController.m
+//  SBDTableViewController.m
 //  StoryBoardDemo
 //
-//  Created by wwwins on 13/10/28.
-//  Copyright (c) 2013年 wwwins. All rights reserved.
+//  Created by wwwins on 2014/1/20.
+//  Copyright (c) 2014年 wwwins. All rights reserved.
 //
 
-#import "SBDTabViewController.h"
+#import "SBDTableViewController.h"
 
-@interface SBDTabViewController ()
+@interface SBDTableViewController ()
+
+@property NSArray *arrSectionData;
+@property NSMutableArray *arrDataSource;
+@property NSMutableArray *arrDataSource1;
+@property NSMutableArray *arrDataSource2;
 
 @end
 
-@implementation SBDTabViewController
+@implementation SBDTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -32,6 +37,7 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self createTableView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,29 +47,59 @@
 }
 
 #pragma mark - Table view data source
+- (void)createTableView
+{
+  [self initDataSource];
+}
+
+- (void)initDataSource
+{
+  _arrDataSource1 = [[NSMutableArray alloc] init];
+  for (int i=0; i<30; i++) {
+    [_arrDataSource1 addObject:[NSString stringWithFormat:@"[1].%d", i]];
+  }
+  
+  _arrDataSource2 = [[NSMutableArray alloc] init];
+  for (int i=0; i<50; i++) {
+    [_arrDataSource2 addObject:[NSString stringWithFormat:@"[2].%d", i]];
+  }
+  
+  _arrDataSource = [[NSMutableArray alloc] initWithObjects:_arrDataSource1,_arrDataSource2, nil];
+  _arrSectionData = [[NSMutableArray alloc] initWithObjects:@"section-1",@"section-2", nil];
+  
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return [_arrSectionData count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [[_arrDataSource objectAtIndex:section] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    cell.textLabel.text = [[_arrDataSource objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  NSString *output = [[_arrDataSource objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+  NSLog(@"output:%@", output);
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+  return [_arrSectionData objectAtIndex:section];
 }
 
 /*
@@ -105,24 +141,16 @@
 }
 */
 
-#pragma mark - Table view delegate
+/*
+#pragma mark - Navigation
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+// In a story board-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([segue.identifier isEqualToString:@"gotoView1"]) {
-        id vc = segue.destinationViewController;
-        [vc setValue:@"hello你好" forKey:@"dataString"];
-    }
-}
+ */
 
 @end

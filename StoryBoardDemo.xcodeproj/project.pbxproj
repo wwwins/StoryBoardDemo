@@ -19,9 +19,10 @@
 		7C33B3A8181E3FE1002AB1CF /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C33B3A7181E3FE1002AB1CF /* Storyboard.storyboard */; };
 		7C33B3AA181E43E8002AB1CF /* btn_define_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C33B3A9181E43E8002AB1CF /* btn_define_b.png */; };
 		7C33B3B3181E5690002AB1CF /* SBDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C33B3B2181E5690002AB1CF /* SBDViewController.m */; };
-		7C33B3B6181E5A3E002AB1CF /* SBDTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C33B3B5181E5A3E002AB1CF /* SBDTabViewController.m */; };
 		7C978089188522E20086700E /* SBDLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C978088188522E20086700E /* SBDLoginController.m */; };
 		7CEB39D1188D1D5700CDA87D /* SBDCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEB39D0188D1D5700CDA87D /* SBDCollectionViewController.m */; };
+		7CEB39D4188D270000CDA87D /* SBDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEB39D3188D270000CDA87D /* SBDTableViewController.m */; };
+		7CEB39D6188D32FD00CDA87D /* cats.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CEB39D5188D32FD00CDA87D /* cats.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,12 +43,13 @@
 		7C33B3A9181E43E8002AB1CF /* btn_define_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_define_b.png; sourceTree = "<group>"; };
 		7C33B3B1181E5690002AB1CF /* SBDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDViewController.h; sourceTree = "<group>"; };
 		7C33B3B2181E5690002AB1CF /* SBDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDViewController.m; sourceTree = "<group>"; };
-		7C33B3B4181E5A3D002AB1CF /* SBDTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDTabViewController.h; sourceTree = "<group>"; };
-		7C33B3B5181E5A3E002AB1CF /* SBDTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDTabViewController.m; sourceTree = "<group>"; };
 		7C978087188522E20086700E /* SBDLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDLoginController.h; sourceTree = "<group>"; };
 		7C978088188522E20086700E /* SBDLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDLoginController.m; sourceTree = "<group>"; };
 		7CEB39CF188D1D5700CDA87D /* SBDCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDCollectionViewController.h; sourceTree = "<group>"; };
 		7CEB39D0188D1D5700CDA87D /* SBDCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDCollectionViewController.m; sourceTree = "<group>"; };
+		7CEB39D2188D270000CDA87D /* SBDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDTableViewController.h; sourceTree = "<group>"; };
+		7CEB39D3188D270000CDA87D /* SBDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDTableViewController.m; sourceTree = "<group>"; };
+		7CEB39D5188D32FD00CDA87D /* cats.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cats.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,18 +96,19 @@
 		7C31DF91181E3ED300A5CEBC /* StoryBoardDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7CEB39D5188D32FD00CDA87D /* cats.jpg */,
 				7C31DF9A181E3ED300A5CEBC /* SBDAppDelegate.h */,
 				7C31DF9B181E3ED300A5CEBC /* SBDAppDelegate.m */,
 				7C31DF92181E3ED300A5CEBC /* Supporting Files */,
 				7C33B3A7181E3FE1002AB1CF /* Storyboard.storyboard */,
 				7C33B3B1181E5690002AB1CF /* SBDViewController.h */,
 				7C33B3B2181E5690002AB1CF /* SBDViewController.m */,
-				7C33B3B4181E5A3D002AB1CF /* SBDTabViewController.h */,
-				7C33B3B5181E5A3E002AB1CF /* SBDTabViewController.m */,
 				7C978087188522E20086700E /* SBDLoginController.h */,
 				7C978088188522E20086700E /* SBDLoginController.m */,
 				7CEB39CF188D1D5700CDA87D /* SBDCollectionViewController.h */,
 				7CEB39D0188D1D5700CDA87D /* SBDCollectionViewController.m */,
+				7CEB39D2188D270000CDA87D /* SBDTableViewController.h */,
+				7CEB39D3188D270000CDA87D /* SBDTableViewController.m */,
 			);
 			path = StoryBoardDemo;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C31DF96181E3ED300A5CEBC /* InfoPlist.strings in Resources */,
+				7CEB39D6188D32FD00CDA87D /* cats.jpg in Resources */,
 				7C31DF9E181E3ED300A5CEBC /* Default.png in Resources */,
 				7C31DFA0181E3ED300A5CEBC /* Default@2x.png in Resources */,
 				7C31DFA2181E3ED300A5CEBC /* Default-568h@2x.png in Resources */,
@@ -194,11 +198,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CEB39D1188D1D5700CDA87D /* SBDCollectionViewController.m in Sources */,
+				7CEB39D4188D270000CDA87D /* SBDTableViewController.m in Sources */,
 				7C31DF98181E3ED300A5CEBC /* main.m in Sources */,
 				7C978089188522E20086700E /* SBDLoginController.m in Sources */,
 				7C31DF9C181E3ED300A5CEBC /* SBDAppDelegate.m in Sources */,
 				7C33B3B3181E5690002AB1CF /* SBDViewController.m in Sources */,
-				7C33B3B6181E5A3E002AB1CF /* SBDTabViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
