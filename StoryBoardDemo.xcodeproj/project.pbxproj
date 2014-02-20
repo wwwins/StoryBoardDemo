@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C195EB318AB2461002AB105 /* SBDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C195EB218AB2461002AB105 /* SBDHomeViewController.m */; };
 		7C31DF8C181E3ED300A5CEBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C31DF8B181E3ED300A5CEBC /* UIKit.framework */; };
 		7C31DF8E181E3ED300A5CEBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C31DF8D181E3ED300A5CEBC /* Foundation.framework */; };
 		7C31DF90181E3ED300A5CEBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C31DF8F181E3ED300A5CEBC /* CoreGraphics.framework */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C195EB118AB2461002AB105 /* SBDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDHomeViewController.h; sourceTree = "<group>"; };
+		7C195EB218AB2461002AB105 /* SBDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDHomeViewController.m; sourceTree = "<group>"; };
 		7C31DF88181E3ED300A5CEBC /* StoryBoardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryBoardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C31DF8B181E3ED300A5CEBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C31DF8D181E3ED300A5CEBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -109,6 +112,8 @@
 				7CEB39D0188D1D5700CDA87D /* SBDCollectionViewController.m */,
 				7CEB39D2188D270000CDA87D /* SBDTableViewController.h */,
 				7CEB39D3188D270000CDA87D /* SBDTableViewController.m */,
+				7C195EB118AB2461002AB105 /* SBDHomeViewController.h */,
+				7C195EB218AB2461002AB105 /* SBDHomeViewController.m */,
 			);
 			path = StoryBoardDemo;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				7C978089188522E20086700E /* SBDLoginController.m in Sources */,
 				7C31DF9C181E3ED300A5CEBC /* SBDAppDelegate.m in Sources */,
 				7C33B3B3181E5690002AB1CF /* SBDViewController.m in Sources */,
+				7C195EB318AB2461002AB105 /* SBDHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

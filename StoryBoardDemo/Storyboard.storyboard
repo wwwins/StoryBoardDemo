@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="-360" y="15"/>
         </scene>
-        <!--Table View Controller - Nav1-這是首頁-->
+        <!--Home View Controller - Nav1-這是首頁-->
         <scene sceneID="qmb-U2-VsF">
             <objects>
-                <tableViewController id="ZMm-5g-BXL" sceneMemberID="viewController">
+                <tableViewController id="ZMm-5g-BXL" customClass="SBDHomeViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="6" sectionHeaderHeight="22" sectionFooterHeight="22" id="9vM-Z1-2Fd">
                         <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -449,7 +449,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="o8i-8G-Ziw"/>
         <segue reference="cmm-6Q-m0R"/>
+        <segue reference="o8i-8G-Ziw"/>
     </inferredMetricsTieBreakers>
 </document>
