@@ -1,5 +1,24 @@
-# @author flashisobar http://isobar.logdown.com/posts/180478-makefile-for-my-ios-project
-
+########################################################################
+#
+# Makefile for the iOS projects.
+# 
+# Remeber to edit Makefile.cfg.mk.
+#
+# Usage:
+#
+# To build ipa:
+# $make ipa
+#
+# To release app:
+# $make release
+#
+# To clean up:
+# $make clean
+#
+# Author: flashisobar
+# URL: http://isobar.logdown.com/posts/180478-makefile-for-my-ios-project
+#
+########################################################################
 include Makefile.cfg.mk
 
 ifdef WORKSPACE
