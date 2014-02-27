@@ -2,7 +2,7 @@
 #
 # Makefile for the iOS projects.
 # 
-# Remeber to edit Makefile.cfg.mk.
+# Remember to modify Makefile.cfg.mk configuration.
 #
 # Usage:
 #
